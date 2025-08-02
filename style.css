@@ -1,0 +1,154 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+header{
+    color: rgb(24, 10, 10);
+    width: 100%;
+    height: 640px;
+    background: url(img/pork1.jpg)no-repeat center center/cover;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+nav{
+    width: 100%;
+    background: rgba(2, 2, 2, 0.349);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    position: fixed ;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+    margin: 10px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(54, 40, 3);
+}
+
+li:hover{
+    border-bottom: 2px solid white;
+}
+
+button{
+    color: white;
+    background: rgb(175, 7, 7);
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+button:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(175, 7, 7);
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgb(183, 183, 183);
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.hero{
+    color: rgb(255, 255, 255);
+    padding: 250px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    z-index: 1;
+}
+
+.hero h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 300px;
+}
+
+@media (max-width: 768px) {
+   .menu-toggle{
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+   }
+
+   .nav-links{
+    display: none;
+    flex-direction: column;
+    float: left;
+    margin-top: 100px;
+    position: absolute;
+    width: 200px;
+    padding: 1rem;
+    z-index: 1;
+   } 
+
+   .nav-links.active {
+    display: flex;
+    }
+
+    .hero{
+        padding: 200px 0 0 0;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero p{
+        padding: 20px 50px;
+    }
+}
