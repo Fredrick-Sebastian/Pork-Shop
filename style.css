@@ -19,6 +19,7 @@ header{
     width: 100%;
     height: 640px;
     background: url(img/pork1.jpg)no-repeat center center/cover;
+    box-shadow: 0 0 10px black;
 }
 
 header::after {
@@ -280,7 +281,8 @@ h1 p{
         width: 100%;
         display: flex;
         flex-direction: column;
-        height: 720px;
+        height: 850px;
+        padding: 150px 50px;
     }
 
     .images{
@@ -294,7 +296,7 @@ h1 p{
         width: 300px;
         height: 100px;
         margin: 100px 0 0 40px;
-        padding: 50px 0 50px 90px;
+        padding: 50px 0 50px 50px;
         border: 5px solid rgb(255, 255, 255);
     }
 
@@ -316,11 +318,18 @@ h1 p{
         width: 100%;
         height: 1050px;
         text-align: center;
-        padding: 100px  10px;
+        padding: 200px  50px;
     }
     
     .pork{
         display: grid;
         grid-template-columns: 2fr 2fr;
+    }
+
+    .our-dishes img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    border-radius: 2px 30px;
     }
 }
