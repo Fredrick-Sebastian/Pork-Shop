@@ -15,7 +15,7 @@ body{
 
 /* Header nav and hero */
 header{
-    color: rgb(24, 10, 10);
+    color: rgb(0, 0, 0);
     width: 100%;
     height: 640px;
     background: url(img/pork1.jpg)no-repeat center center/cover;
@@ -114,9 +114,11 @@ header img{
 
 .hero p{
     color: rgb(0, 0, 0);
+    background-color: rgba(5, 0, 0, 0.253);
     font-size: 20px;
     text-align: center;
     padding: 20px 300px;
+    box-shadow: 0 0 10px black;
 }
 
 /* About Us */
@@ -332,14 +334,16 @@ footer{
    }
 
    .nav-links{
+    background-color: black;
     display: none;
     flex-direction: column;
-    float: left;
-    margin-top: 100px;
-    position: absolute;
+    float: right;
     width: 200px;
     padding: 1rem;
     z-index: 1;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.377);
+    box-shadow: 0 0 10px black;
    } 
 
    .nav-links.active {
